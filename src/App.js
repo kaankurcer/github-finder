@@ -1,8 +1,15 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <div class="flex flex-col justify-between h-screen">
+        <Navbar />
+
+        <main>Content</main>
+      </div>
+    </Router>
   );
 }
 
