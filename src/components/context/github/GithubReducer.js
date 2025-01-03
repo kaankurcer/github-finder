@@ -1,6 +1,6 @@
 const githubReducer = (state, action) => {
   switch (action.type) {
-    case "START_FETCH":
+    case "SET_LOADING":
       return {
         ...state,
         loading: true,
